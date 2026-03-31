@@ -1,0 +1,39 @@
+:root {
+  font-family: "Roboto", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  color: #1d1b20;
+  background: #fffbfe;
+  --surface: #fffbfe;
+  --text-primary: #1d1b20;
+  --surface-container: #f3edf7;
+  --surface-container-high: #ece6f0;
+  --surface-container-low: #f7f2fa;
+  --outline: #79747e;
+  --outline-variant: #cac4d0;
+  --primary: #6750a4;
+  --on-primary: #ffffff;
+  --primary-container: #eaddff;
+  --on-primary-container: #21005d;
+  --secondary: #625b71;
+  --on-surface-variant: #49454f;
+  --error: #b3261e;
+  --radius: 16px;
+}
+
+html[data-theme="dark"] {
+  color: #e8eaed;
+  background: #131314;
+  --surface: #131314;
+  --text-primary: #e8eaed;
+  --surface-container: #1e1f20;
+  --surface-container-high: #2a2b2d;
+  --surface-container-low: #1b1c1e;
+  --outline: #8f9093;
+  --outline-variant: #444746;
+  --primary: #d0bcff;
+  --on-primary: #381e72;
+  --primary-container: #4f378b;
+  --on-primary-container: #eaddff;
+  --secondary: #ccc2dc;
+  --on-surface-variant: #c4c7c5;
+  --error: #f2b8b5;
+}

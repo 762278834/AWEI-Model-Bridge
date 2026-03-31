@@ -1,0 +1,108 @@
+#window-titlebar {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 14px;
+  background: var(--surface-container);
+  border-bottom: 1px solid var(--outline-variant);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  -webkit-app-region: drag;
+}
+
+.window-title {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 13px;
+  color: var(--on-surface-variant);
+  font-weight: 500;
+  cursor: grab;
+  user-select: none;
+}
+
+.layout {
+  height: calc(100vh - 44px);
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 72px 300px 1fr;
+  overflow: hidden;
+}
+
+.rail {
+  background: var(--surface-container);
+  border-right: 1px solid var(--outline-variant);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 14px;
+}
+
+.rail-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.rail-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #b0b7c3;
+}
+
+.rail-dot.active {
+  background: var(--primary);
+}
+
+.sidebar {
+  background: var(--surface-container-low);
+  border-right: 1px solid var(--outline-variant);
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.content {
+  padding: 18px 22px 10px;
+  overflow: auto;
+  background: var(--surface);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  background: var(--surface-container-low);
+  border: 1px solid var(--outline-variant);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.title-drag {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.top-actions {
+  color: var(--on-surface-variant);
+  font-size: 13px;
+}
